@@ -21,8 +21,6 @@ if (isset($_POST['csvimport'])) {
 
     $header = fgetcsv($csvFile); // getting header of csv
 
-
-
     // Read file
     while (($csvData = fgetcsv($csvFile)) !== FALSE) {
 
@@ -71,7 +69,7 @@ if (isset($_POST['csvimport'])) {
             }
           }
         }
-      }else{
+      } else {
         echo 'form id not found';
       }
     }
@@ -85,7 +83,6 @@ if (isset($_POST['csvimport'])) {
 ?>
 <h2>All Entries</h2>
 
-<!-- Form -->
 <form method='post' action='<?= $_SERVER['REQUEST_URI']; ?>' enctype='multipart/form-data' id="csv_import_form">
   <input type="file" name="import_csv_file">
   <button type="submit" name="csvimport">Import</button>
