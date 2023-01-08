@@ -1,0 +1,31 @@
+#csv_import_form input{
+    height:40px;
+    border: 1px solid;
+    background-color: lightgray;
+    border-radius: 20px;
+    padding: 7px;
+}
+#csv_import_form input:hover{
+    border-color: blue;
+}
+#csv_import_form button{
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(33, 173, 219);
+}
+#csv_import_form button:hover{
+    background-color: goldenrod;
+}
+
+#csv_table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  #csv_table td, #csv_table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
